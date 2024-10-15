@@ -2,7 +2,11 @@ name: sample workflow
 on: push
 jobs:
   build:
-    name: Buildsx the code in Linux
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+      - name: Checks out the code
+        uses: actions/checkout@v3
+      - name: Installs dependencies
+        run: npm install
+      - name: Builds project
+        run: npm run build
