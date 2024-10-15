@@ -1,8 +1,8 @@
 name: sample workflow
 on: push
 jobs:
-  buildx:
-    name: Builds the code in Linux
+  build:
+    name: Buildsx the code in Linux
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
