@@ -11,7 +11,7 @@ jobs:
     needs: checkout
     steps:
       - name: Installs dependencies
-        run: 
+        run: |
             echo "Current directory"
             pwd
             echo "List files"
