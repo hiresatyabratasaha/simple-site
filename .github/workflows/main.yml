@@ -22,4 +22,6 @@ jobs:
             pwd
             echo "List files"
             ls -al
+      - name: Start the server
+        run: npm start
 
