@@ -1,6 +1,11 @@
 name: main workflow
 on: push
 jobs:
+  actor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Triggered By
+        run: echo "Triggered by ${{github.actor}}"
   checkout-install-build:
     runs-on: ubuntu-latest
     steps:
