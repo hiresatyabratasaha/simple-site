@@ -1,12 +1,15 @@
 name: main workflow
 on: push
 jobs:
-  checkout:
+  checkout-install-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checks out the code
         uses: actions/checkout@v3
-      - name: Peep the folder
+      - name: Install Dependencies
         run: |
-            node --version
+            npm install
+      - name: Build the package
+        run: |
+            npm run build
 
