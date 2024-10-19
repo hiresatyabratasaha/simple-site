@@ -8,20 +8,5 @@ jobs:
         uses: actions/checkout@v3
       - name: Peep the folder
         run: |
-            echo "Current directory"
-            pwd
-            echo "List files"
-            ls -al
-      - name: Install dependencies
-        run: npm install
-      - name: Build the code
-        run: npm run build
-      - name: Peep the folder
-        run: |
-            echo "Current directory"
-            pwd
-            echo "List files"
-            ls -al
-      - name: Start the server
-        run: npm start
+            node --version
 
